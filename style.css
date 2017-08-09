@@ -1,0 +1,19 @@
+.hero.is-primary {
+    background-color: #412041 !important;
+}
+
+.hero.is-primary .tabs.is-boxed li.is-active a,
+.hero.is-primary .tabs.is-boxed li.is-active a:hover,
+.hero.is-primary .tabs.is-toggle li.is-active a,
+.hero.is-primary .tabs.is-toggle li.is-active a:hover{
+	color: #412041 !important;
+}
+
+img.logo {
+	height: 120px;
+	margin-bottom: 20px;
+}
+
+.space-right {
+	margin-right:30px;
+}
