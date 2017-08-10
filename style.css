@@ -71,13 +71,48 @@ a[href="#top"]:hover{
 }
 
 table {
-	width: 40%;
+	width: 70%;
 	margin-left: auto;
     margin-right: auto;
 }
 
 .calendar {
-    width: 120px;
-    position: absolute;
-    margin-left: 64%;
+	width: 25px;
+    margin-bottom: -3px;
+}
+
+.image-medium {
+	width: 170px;
+}
+
+.footer {
+    padding: 3rem 1.5rem 3rem !important;
+}
+
+.space-bottom-special {
+	margin-bottom: -13px;
+}
+
+@media screen and (max-width: 768px) {
+  	table {
+		width: 100%;
+		margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.image-medium {
+		width: 120px;
+	}
+
+	.space-bottom-special {
+		margin-bottom: -10px;
+	}
+
+	.space-right {
+		margin-right:10px;
+	}
+
+	.space-left {
+		margin-left:10px;
+	}
 }

@@ -24,4 +24,12 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: $('#cronograma').offset().top}, 800);
     });
 
+    $('#btnPerguntas').click(function(){
+        $('html, body').animate({scrollTop: $('#perguntas').offset().top}, 800);
+    });
+
+    $('#btnParceiros').click(function(){
+        $('html, body').animate({scrollTop: $('#parceiros').offset().top}, 800);
+    });
+
 });
