@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
 	<title>PHP Women RJ</title>
+
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<!-- Css -->
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
 </head>
 <body>
+	<a href="#top" class="button-radius">
+		<img src="up-arrow.svg" alt="Seta Cima" />
+	</a>
 	<section class="hero is-primary is-medium">
 		<!-- Hero content: will be in the middle -->
 		<div class="hero-body">
@@ -15,7 +23,8 @@
 				<h1 class="title is-1">Install Fest - PHP Women RJ</h1>
 				<h2 class="subtitle is-3"> 2 de Setembro de 2017 - Mundipagg</h2>
 				<a class="button is-danger space-right">Inscrição para Participante</a>
-				<a class="button is-danger">Inscrição para Mentoria</a>
+				<span class="subtitle is-5">.</span>
+				<a class="button is-danger space-left">Inscrição para Mentoria</a>
 			</div>
 		</div>
 
@@ -23,10 +32,10 @@
 		<div class="hero-foot">
 			<nav class="tabs is-boxed is-fullwidth">
 				<div class="container">
-					<ul>
-						<li class="is-active"><a>Sobre</a></li>
-						<li><a>Localização e Horário</a></li>
-						<li><a>Cronograma</a></li>
+					<ul id="menu">
+						<li class="is-active"><a id="btnSobre">Sobre</a></li>
+						<li><a id="btnLocal">Localização</a></li>
+						<li><a id="btnCronograma">Cronograma</a></li>
 						<li><a>Perguntas Frequentes</a></li>
 						<li><a>Parceiros</a></li>
 					</ul>
@@ -34,5 +43,96 @@
 			</nav>
 		</div>
 	</section>
+
+	<section id="sobre" class="section is-medium">
+		<div class="container">	   	
+			<div class="notification is-primary has-text-centered">
+				Ficamos muito felizes por ter nos encontrado. Esse é o um dos principais canais para promover encontros entre programadoras PHP do Rio de Janeiro.
+			</div>
+
+			<div class="border">
+				<h4 class="title is-4 is-spaced">Quem Somos</h4>
+				<h5 class="subtitle is-5 space-bottom">
+					Um grupo de mulheres desenvolvedoras, aspirantes e simpatizantes que buscam a disseminação de conhecimento e a criação de um ambiente acolhedor a todas e todos.
+				</h5>
+
+				<h4 class="title is-4 is-spaced">Nosso Objetivo</h4>
+				<h5 class="subtitle is-5 space-bottom">
+					Queremos reforçar a importância da integração entre todos os membros, independente de suas diferenças, mas aqui, temos como nosso principal objetivo melhorar a participação das mulheres no mercado de trabalho e ajudar todas aquelas que querem aprender PHP.
+				</h5>
+
+				<h4 class="title is-4 is-spaced">Onde nos encontrar</h4>
+				<h5 class="subtitle is-5">			
+					Estamos presentes em eventos promovidos e apoiados pelo PHPRio, eventos associados à linguagem PHP e desenvolvimento de software. No Facebook somos encontradas como PHPWomenBR, e além disso, você pode bater um papo com a gente no telegram (@PHPWomenRJ).
+				</h5>
+			</div>
+		</div>
+	</section>
+
+	<span class="section division">
+		<div class="container">	   	
+			<h3 class="title is-3 has-text-centered">* * *</h3>
+		</div>
+	</span>
+
+	<section id="local" class="section hero is-danger">
+		<div class="container">	   	
+			<h4 class="title is-4 is-spaced">Localização</h4>
+			<h5 class="subtitle is-5">
+				Av. Gen. Justo, 375 - Centro, Rio de Janeiro - RJ, 20021-130 <strong>(Mundipagg)</strong>
+			</h5>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.164931788678!2d-43.170933185034364!3d-22.907286685011606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981e7223da871%3A0x4f382a5312ba5fe3!2sMundiPagg!5e0!3m2!1spt-BR!2sbr!4v1502342133599" width="100%" height="450" frameborder="0" style="border:5px solid #412041" allowfullscreen></iframe>
+		</div>
+	</section>
+
+	<span class="section division">
+		<div class="container">	   	
+			<h3 class="title is-3 has-text-centered">* * *</h3>
+		</div>
+	</span>
+
+	<section id="cronograma" class="section is-medium">
+		<div class="container">	   	
+			<h4 class="title is-4 is-spaced has-text-centered">Cronograma</h4>
+			<img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/calendar-icon.png" alt="Calendário" class="calendar">
+			<table class="table is-bordered">
+				<thead>
+					<tr>
+						<th class="has-text-centered">Horário</th>
+						<th>Atividade</th>
+					</tr>
+				</thead>				
+				<tbody>
+					<tr>
+						<td class="has-text-centered">9:00h</td>
+						<td>Credenciamento</td>
+					</tr>
+					<tr>
+						<td class="has-text-centered">10:00h</td>
+						<td>Início do Evento</td>
+					</tr>
+					<tr>
+						<th class="has-text-centered">~</th>
+						<th>Em breve cronograma completo.</th>
+					</tr>
+					<tr>
+						<td class="has-text-centered">17:00h</td>
+						<td>Encerramento + Foto Oficial</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<span class="section division">
+		<div class="container">	   	
+			<h3 class="title is-3 has-text-centered">* * *</h3>
+		</div>
+	</span>
+
+	<!-- Script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
